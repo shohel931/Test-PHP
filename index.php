@@ -20,7 +20,7 @@
             <li><a href="contact.php">Contact</a></li>
         </ul>
     </div>
-    <div class="nav_area">
+    <div class="login_area">
             <a class="login" href="login.php">Login</a>
             <a class="register" href="register.php">Register</a>
     </div>
