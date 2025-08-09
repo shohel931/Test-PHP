@@ -10,6 +10,14 @@
 <body>
 
 <header class="header_area">
+    <div class="image">
+        <a href="index.php"><img src="#" alt=""></a>
+    </div>
+    <nav class="nav_area">
+        <ul>
+            <li><a href="login.php">Login</a></li>
+            <li><a href="register.php">Register</a></li>
+        </ul>
 </header>
 
 
