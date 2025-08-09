@@ -10,6 +10,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 
 if (!empty($fullname) && !empty($email) && !empty($username) && !empty($password)) {
+
+    $check_sql = "SELECT * FROM users WHERE username = ? OR email = ?";
+    $check_stmt = $conn->prepare($check_sql);
+    $check_stmt->bind_param("ss", $username, $email);
+    $check_stmt->execute();
+    $check_result = $check_stmt->get_result();
+    if ($check_result->num_rows > 0) {
+        echo "<script>alert('Username or Email already exists. Please try again.');</script>";
+        $check_stmt->close();
+        exit();
+    }
+    $check_stmt->close();
+
+
     $sql = "INSERT INTO users (fullname, email, username, password) VALUES (?, ?, ?, ?)";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("ssss", $fullname, $email, $username, $password);
@@ -17,16 +31,14 @@ if (!empty($fullname) && !empty($email) && !empty($username) && !empty($password
 
     if ($stmt->execute()) {
         echo "<script>alert('Registration successful!');</script>";
+        header("Location: login.php");
+        exit();
     } else {
         echo "<script>alert('Registration failed. Please try again.');</script>";
     }
 
     $stmt->close();
-} else {
-    echo "<script>alert('Please fill in all fields.');</script>";
-    header("Location: register.php");
-    exit();
-}
+} 
 
 
 
