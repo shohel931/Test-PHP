@@ -1,5 +1,5 @@
 <?php 
-include 'confige.php';
+session_start();
 
 if (!isset($_SESSION['user_id'])) {
     header('Location: login.php');
@@ -41,7 +41,30 @@ if (!isset($_SESSION['user_id'])) {
     </div> -->
 </header>
 
-
+<div class="contant_area">
+    <div class="sub_contant">
+        <div class="left_box">
+            <h2>Shortcute</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </div>
+        <div class="main_contant">
+            <div class="create_post">
+                <input type="text" placeholder="What's your mind, <?php echo htmlspecialchars($_SESSION['username']); ?>">
+            </div>
+        </div>
+        <div class="right_box">
+            <h2>Sponsered</h2>
+            <div class="sp_box">
+                <a href="#"><img src="" alt=""></a>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 </body>
