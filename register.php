@@ -2,11 +2,30 @@
 include 'confige.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $fname = ($_POST['fname']);
+    $fullname = ($_POST['fullname']);
     $email = ($_POST['email']);
     $username = ($_POST['username']);
-    $password = ($_POST['password']);
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT); 
 
+}
+
+if (!empty($fullname) && !empty($email) && !empty($username) && !empty($password)) {
+    $sql = "INSERT INTO users (fullname, email, username, password) VALUES (?, ?, ?, ?)";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("ssss", $fullname, $email, $username, $password);
+
+
+    if ($stmt->execute()) {
+        echo "<script>alert('Registration successful!');</script>";
+    } else {
+        echo "<script>alert('Registration failed. Please try again.');</script>";
+    }
+
+    $stmt->close();
+} else {
+    echo "<script>alert('Please fill in all fields.');</script>";
+    header("Location: register.php");
+    exit();
 }
 
 
@@ -30,8 +49,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <h2>Register</h2>
             <form action="" method="POST">
                 <div class="input_field">
-                    <input type="text" id="fname" name="fname" required>
-                    <label for="fname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                    <label for="fullname">Full Name</label>
                 </div>
                 <div class="input_field">
                     <input type="email" id="email" name="email" required>
