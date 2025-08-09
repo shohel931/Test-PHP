@@ -90,6 +90,12 @@ session_start();
                     </video>
                 </div>
 
+                <div class="count_like">
+                    <p><i class="fa-solid fa-thumbs-up"></i> 100 Likes</p>
+                    <p><i class="fa-solid fa-comment"></i> 50 Comments</p>
+                    <p><i class="fa-solid fa-share"></i> 20 Shares</p>
+                </div>
+
                 <div class="post_reaction">
                     <ul>
                         <li><a href="#"><i class="fa-solid fa-thumbs-up"></i> Like</a></li>
