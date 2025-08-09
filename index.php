@@ -64,7 +64,7 @@ session_start();
 
             <div class="create_post">
                 <div class="upload_area">
-                <div class="profile_area">
+                <div class="up_logo">
                     <a href="#"><img src="./img/log.png" alt=""></a>
                 </div>
                 <div class="forms">
@@ -74,9 +74,9 @@ session_start();
                        <span><i class="fa-solid fa-image"></i> Image</span>
                         <input type="file" id="imageinput" name="image" accept="image/*" style="display: none;">    
                     </label> <b>|</b>
-                    <label for="videoinpur">
+                    <label for="videoinput">
                         <span><i class="fa-solid fa-video"></i> Video</span>
-                        <input type="file" id="videoinpur" name="video" accept="video/*" style="display: none;">
+                        <input type="file" id="videoinput" name="video" accept="video/*" style="display: none;">
                     </label> <br><br>
                     <button type="submit" class="btn btn-danger">Post</button>
                 </form>
