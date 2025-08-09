@@ -66,6 +66,7 @@ session_start();
                 <input type="text" placeholder="What's your mind,  ">
             </div>
             <div class="create_post">
+
                 <div class="profile_area">
                     <a href="#"><img src="" alt=""></a>
                     <div class="name_time">
@@ -73,6 +74,11 @@ session_start();
                     <p>2 min ago</p>
                     </div>
                 </div>
+
+                <div class="post_text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet non vero sapiente illum iure repellat praesentium ea reiciendis, libero dignissimos.</p>
+                </div>
+                
             </div>
             </div>
         </div>
