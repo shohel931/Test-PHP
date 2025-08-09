@@ -14,22 +14,19 @@ if ($password !== $confirm_password) {
     echo "Passwords do not match!";
 } else {
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+
+    $sql = "INSERT INTO users (fname, email, username, password) VALUES (?, ?, ?, ?)";
+    $stmt = mysqli_prepare($conn, $sql);
+    mysqli_stmt_bind_param($stmt, "ssss", $fname, $email, $username, $hashed_password);
+
+    if (mysqli_stmt_execute($stmt)) {
+        echo "Registation successfully";
+    } else {
+        echo "Error: " . mysqli_error($conn);
+    }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+mysqli_stmt_close($stmt);
 
 ?>
 
