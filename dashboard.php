@@ -33,7 +33,10 @@ if (!isset($_SESSION['username'])) {
             </div>
         </div>
         <div class="mainbar_area">
-            .
+            <div class="Main_comtent_header">
+                <h2>Welcome to the Dashboard</h2>
+                <p>Welcome, <b>(<?php echo htmlspecialchars($_SESSION['username']); ?>)</b></p>
+            </div>
         </div>
     </div>
 </div>

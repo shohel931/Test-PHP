@@ -46,3 +46,17 @@
 .sidebar_area ul li a:hover {
     color: #ffcc00;
 }
+
+.mainbar_area {
+    width: 85%;
+    height: 100vh;
+    padding: 20px;
+    background-color: #fff;
+    overflow-y: auto;
+}
+.mainbar_area .Main_comtent_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
