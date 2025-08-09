@@ -14,14 +14,17 @@ if (!isset($_SESSION['username'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/dashboard.css">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <title>Dashboard</title>
 </head>
 <body>
 
 <div class="Dashboard_area">
     <div class="sub_dashboard">
-        <div class="sidebar_area"></div>
+        <div class="sidebar_area">
+            <h2>NetWork</h2>
+            
+        </div>
         <div class="mainbar_area"></div>
     </div>
 </div>
