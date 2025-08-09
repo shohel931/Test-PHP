@@ -70,12 +70,12 @@ session_start();
                 <div class="forms">
                     <form action="">
                     <textarea name="text" id="" placeholder="What's your mind, Sohel" required></textarea> <br><br>
-                    <label for="imageinput">
-                       <span><i class="fa-solid fa-image"></i> Image</span>
+                    <label class="image_inp" for="imageinput">
+                       <i class="fa-solid fa-image"></i><span> Image</span>
                         <input type="file" id="imageinput" name="image" accept="image/*" style="display: none;">    
                     </label> <b>|</b>
-                    <label for="videoinput">
-                        <span><i class="fa-solid fa-video"></i> Video</span>
+                    <label class="video_inp" for="videoinput">
+                        <i class="fa-solid fa-video"></i><span> Video</span>
                         <input type="file" id="videoinput" name="video" accept="video/*" style="display: none;">
                     </label> <br><br>
                     <button type="submit" class="btn btn-danger">Post</button>

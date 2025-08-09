@@ -122,7 +122,6 @@ body {
 
 .create_post .upload_area {
     display: flex;
-    padding: 10px;
 }
 .create_post .upload_area .up_logo img {
     width: 50px;
@@ -138,6 +137,10 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     outline: none;
+}
+.create_post .upload_area .forms label {
+    align-items: center;
+    cursor: pointer;
 }
 
 .create_post .profile_area {
