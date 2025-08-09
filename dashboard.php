@@ -27,8 +27,8 @@ if (!isset($_SESSION['username'])) {
                 <ul>
                     <li><a href="dashboard.php"><i class="fa-solid fa-house"></i> Dashboard</a></li>
                     <li><a href="profile.php"><i class="fa-solid fa-user"></i> Profile</a></li>
-                    <li><a href="settings.php">Settings</a></li>
-                    <li><a href="logout.php">Logout</a></li>
+                    <li><a href="settings.php"><i class="fa-solid fa-gear"></i> Settings</a></li>
+                    <li><a href="logout.php"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
                 </ul>
             </div>
         </div>
