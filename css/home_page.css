@@ -113,6 +113,10 @@ body {
     height: auto;
     padding: 10px;
 }
+.create_post .upload_area {
+    display: flex;
+    align-items: center;
+}
 .create_post .profile_area {
     display: flex;
     align-items: center;
