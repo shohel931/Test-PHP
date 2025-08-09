@@ -59,7 +59,7 @@ if (!empty($fullname) && !empty($email) && !empty($username) && !empty($password
     <div class="container">
         <div class="form_container">
             <h2>Register</h2>
-            <form action="" method="POST">
+            <form action="" method="POST" >
                 <div class="input_field">
                     <input type="text" id="fullname" name="fullname" required>
                     <label for="fullname">Full Name</label>
@@ -69,7 +69,7 @@ if (!empty($fullname) && !empty($email) && !empty($username) && !empty($password
                     <label for="email">Email</label>
                 </div>
                 <div class="input_field">
-                    <input type="text" id="username" name="username" required>
+                    <input type="text" id="username" name="username" pattern="" required>
                     <label for="username">Username</label>
                 </div>
                 <div class="input_field">
