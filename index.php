@@ -89,6 +89,14 @@ session_start();
                         Your browser does not support the video tag.
                     </video>
                 </div>
+
+                <div class="post_reaction">
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-thumbs-up"></i> Like</a></li>
+                        <li><a href="#"><i class="fa-solid fa-comment"></i> Comment</a></li>
+                        <li><a href="#"><i class="fa-solid fa-share"></i> Share</a></li>
+                    </ul>
+                </div> 
             </div>
             </div>
         </div>

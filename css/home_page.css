@@ -163,3 +163,22 @@ body {
     height: auto;
     border-radius: 5px;
 }
+.create_post .post_reaction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.create_post .post_reaction ul {
+    display: flex;
+    gap: 10px;
+}
+.create_post .post_reaction ul li {
+    font-size: 16px;
+    cursor: pointer;
+    color: #555;
+}
+.create_post .post_reaction ul li a {
+    color: #555;
+    transition: color 0.3s;
+}
