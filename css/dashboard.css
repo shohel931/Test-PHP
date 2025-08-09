@@ -25,3 +25,9 @@
     background-color: #0004ff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.sidebar_area h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
