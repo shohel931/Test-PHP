@@ -9,10 +9,10 @@
 </head>
 <body>
 
-<div class="home_page">
-<h1>Welcome to My Site</h1>
-<a href="login.php">Login Here</a>
-<a href="register.php">Register</a>
-</div>
+
+
+
+
+
 </body>
 </html>
