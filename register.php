@@ -69,11 +69,11 @@ if (!empty($fullname) && !empty($email) && !empty($username) && !empty($password
                     <label for="email">Email</label>
                 </div>
                 <div class="input_field">
-                    <input type="text" id="username" name="username" pattern="" required>
+                    <input type="text" id="username" name="username" pattern="^[a-zA-Z0-9_.]{6,}$" title="Username must be at least 6 characters and contain only letters, numbers, underscore (_) or dot (.)" required>
                     <label for="username">Username</label>
                 </div>
                 <div class="input_field">
-                    <input type="password" id="password" name="password" required>
+                    <input type="password" id="password" name="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}" required>
                     <label for="password">Password</label>
                 </div>
                 <button type="submit" class="btn">Register</button>
