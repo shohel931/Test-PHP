@@ -31,3 +31,17 @@
     margin-bottom: 20px;
     text-align: center;
 }
+.sidebar_area ul {
+    padding: 0;
+}
+.sidebar_area ul li {
+    margin: 22px 0;
+}
+.sidebar_area ul li a {
+    color: #fff;
+    font-size: 22px;
+    transition: color 0.3s ease;
+}
+.sidebar_area ul li a:hover {
+    color: #ffcc00;
+}
