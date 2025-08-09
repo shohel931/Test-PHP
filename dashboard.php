@@ -32,15 +32,17 @@ if (!isset($_SESSION['username'])) {
                 </ul>
             </div>
         </div>
-        <div class="mainbar_area"></div>
+        <div class="mainbar_area">
+            <h2>Welcome to the Dashboard</h2>
+<p>You are logged in as <b>(<?php echo htmlspecialchars($_SESSION['username']); ?>)</b></p>
+
+<p><a href="logout.php">Logout</a></p>
+        </div>
     </div>
 </div>
 
     
-<h2>Welcome to the Dashboard</h2>
-<p>You are logged in as <b>(<?php echo htmlspecialchars($_SESSION['username']); ?>)</b></p>
 
-<p><a href="logout.php">Logout</a></p>
 
 
 
