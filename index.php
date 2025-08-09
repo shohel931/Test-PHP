@@ -57,14 +57,34 @@ session_start();
                 <li><a href="#">Home</a></li>
             </ul>
         </div>
+
+
         <div class="main_contant">
             <div class="sub_contain_area">
+
             <div class="create_post">
-                <input type="text" placeholder="What's your mind,  ">
+                <div class="upload_area">
+                <div class="profile_area">
+                    <a href="#"><img src="./img/log.png" alt=""></a>
+                </div>
+                <div class="forms">
+                    <form action="">
+                    <textarea name="text" id="" placeholder="What's your mind, Sohel" required></textarea> <br><br>
+                    <label for="imageinput">
+                        <i class="fa-solid fa-image"></i> <span>Add Image</span>
+                        <input type="file" id="imageinput" name="image" accept="image/*" style="display: none;">    
+                    </label>
+                    <label for="videoinpur">
+                        <i class="fa-solid fa-video"></i> <span>Video</span>
+                        <input type="file" id="videoinpur" name="video" accept="video/*" style="display: none;">
+                    </label> <br><br>
+                    <button type="submit" class="btn btn-primary">Post</button>
+                </form>
+                </div>
+                </div>
             </div>
-            <div class="create_post">
-                <input type="text" placeholder="What's your mind,  ">
-            </div>
+
+
             <div class="create_post">
 
                 <div class="profile_area">
@@ -105,6 +125,8 @@ session_start();
             </div>
             </div>
         </div>
+
+
         <div class="right_box">
             <h2>Sponsered</h2>
             <div class="sp_box">
