@@ -68,7 +68,7 @@ session_start();
             <div class="create_post">
 
                 <div class="profile_area">
-                    <a href="#"><img src="" alt=""></a>
+                    <a href="#"><img src="./img/log.png" alt=""></a>
                     <div class="name_time">
                     <a href="#"><h3>Md. Shohel Rana</h3></a>
                     <p>2 min ago</p>
@@ -80,7 +80,7 @@ session_start();
                 </div>
 
                 <div class="post_image">
-                    <img src="https://via.placeholder.com/600x400" alt="Post Image">
+                    <img src="./img/post.jpg" alt="Post Image">
                 </div>
             </div>
             </div>
