@@ -10,14 +10,22 @@
 <body>
 
 <header class="header_area">
-    <div class="image">
-        <a href="index.php"><img src="#" alt=""></a>
+    <div class="logo">
+        <a href="index.php"><img src="./img/log.png" alt=""></a>
     </div>
-    <nav class="nav_area">
+    <div class="nav_area">
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="contact.php">Contact</a></li>
+        </ul>
+    </div>
+    <div class="nav_area">
         <ul>
             <li><a href="login.php">Login</a></li>
             <li><a href="register.php">Register</a></li>
         </ul>
+    </div>
 </header>
 
 
