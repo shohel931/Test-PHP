@@ -84,7 +84,6 @@ body {
 .contant_area .sub_contant {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
 }
 .contant_area .sub_contant .left_box, .right_box{
     width: 20%;
