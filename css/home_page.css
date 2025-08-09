@@ -113,3 +113,22 @@ body {
     height: auto;
     padding: 10px;
 }
+.create_post .profile_area {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.create_post .profile_area img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.create_post .profile_area .name_time h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.create_post .profile_area .name_time p {
+    font-size: 14px;
+    color: #888;
+}

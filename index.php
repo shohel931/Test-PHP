@@ -70,7 +70,7 @@ session_start();
                     <a href="#"><img src="" alt=""></a>
                     <div class="name_time">
                     <a href="#"><h3>Md. Shohel Rana</h3></a>
-                    <span>2 min ago</span>
+                    <p>2 min ago</p>
                     </div>
                 </div>
             </div>
