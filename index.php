@@ -1,10 +1,10 @@
 <?php 
 session_start();
 
-if (!isset($_SESSION['user_id'])) {
-    header('Location: login.php');
-    exit();
-}
+// if (!isset($_SESSION['user_id'])) {
+//     header('Location: login.php');
+//     exit();
+// }
 
 
 
@@ -59,7 +59,7 @@ if (!isset($_SESSION['user_id'])) {
         </div>
         <div class="main_contant">
             <div class="create_post">
-                <input type="text" placeholder="What's your mind, <?php echo htmlspecialchars($_SESSION['username']); ?>">
+                <input type="text" placeholder="What's your mind,  ">
             </div>
         </div>
         <div class="right_box">
