@@ -12,4 +12,16 @@ if (!$conn) {
 echo "Connected Successfully";
 
 
+// Create database
+$sql = "CREATE DATABASE IF NOT EXISTS login_system";
+if (mysqli_query($conn, $sql)) {
+    echo "Database Created Successfully";
+} else {
+    echo "Error creating database: " . mysqli_error($conn);
+}
+
+
+mysqli_close($conn);
+
+
 ?>
