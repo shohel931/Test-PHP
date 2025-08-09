@@ -78,7 +78,10 @@ session_start();
                 <div class="post_text">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet non vero sapiente illum iure repellat praesentium ea reiciendis, libero dignissimos.</p>
                 </div>
-                
+
+                <div class="post_image">
+                    <img src="https://via.placeholder.com/600x400" alt="Post Image">
+                </div>
             </div>
             </div>
         </div>

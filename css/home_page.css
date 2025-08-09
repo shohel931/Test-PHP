@@ -132,3 +132,19 @@ body {
     font-size: 14px;
     color: #888;
 }
+.create_post .post_text {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+}
+.create_post .post_text p {
+    margin: 0;
+    color: #555;
+}
+.create_post .post_text .post_image {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
