@@ -25,10 +25,10 @@ if (!isset($_SESSION['username'])) {
             <h2>NetWork</h2>
             <div class="menu_area">
                 <ul>
-                    <li><a href="dashboard.php">Dashboard</a></li>
-                    <li><a href="dashboard.php">Profile</a></li>
-                    <li><a href="dashboard.php">Settings</a></li>
-                    <li><a href="dashboard.php">Logout</a></li>
+                    <li><a href="dashboard.php"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+                    <li><a href="profile.php"><i class="fa-solid fa-user"></i> Profile</a></li>
+                    <li><a href="settings.php">Settings</a></li>
+                    <li><a href="logout.php">Logout</a></li>
                 </ul>
             </div>
         </div>
