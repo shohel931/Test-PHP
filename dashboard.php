@@ -37,6 +37,10 @@ if (!isset($_SESSION['username'])) {
                 <h2>Welcome to the Dashboard</h2>
                 <p>Welcome, <b>(<?php echo htmlspecialchars($_SESSION['username']); ?>)</b></p>
             </div>
+            <div class="Main_content">
+                <div class="content_box"></div>
+                <div class="content_box"></div>
+                <div class="content_box"></div>
         </div>
     </div>
 </div>
