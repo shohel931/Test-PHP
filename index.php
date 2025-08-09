@@ -58,8 +58,10 @@ session_start();
             </ul>
         </div>
         <div class="main_contant">
+            <div class="sub_contain_area">
             <div class="create_post">
                 <input type="text" placeholder="What's your mind,  ">
+            </div>
             </div>
         </div>
         <div class="right_box">
