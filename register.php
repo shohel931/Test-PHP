@@ -6,27 +6,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = ($_POST['email']);
     $username = ($_POST['username']);
     $password = ($_POST['password']);
-    $confirm_password = ($_POST['confirm_password']);
 
 }
 
-if ($password !== $confirm_password) {
-    echo "Passwords do not match!";
-} else {
-    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-    $sql = "INSERT INTO users (fname, email, username, password) VALUES (?, ?, ?, ?)";
-    $stmt = mysqli_prepare($conn, $sql);
-    mysqli_stmt_bind_param($stmt, "ssss", $fname, $email, $username, $hashed_password);
-
-    if (mysqli_stmt_execute($stmt)) {
-        echo "Registation successfully";
-    } else {
-        echo "Error: " . mysqli_error($conn);
-    }
-}
-
-mysqli_stmt_close($stmt);
 
 ?>
 
@@ -61,10 +44,6 @@ mysqli_stmt_close($stmt);
                 <div class="input_field">
                     <input type="password" id="password" name="password" required>
                     <label for="password">Password</label>
-                </div>
-                <div class="input_field">
-                    <input type="password" id="confirm_password" name="confirm_password" required>
-                    <label for="confirm_password">Confirm Password</label>
                 </div>
                 <button type="submit" class="btn">Register</button>
             </form>
