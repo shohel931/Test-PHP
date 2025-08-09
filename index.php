@@ -66,7 +66,13 @@ session_start();
                 <input type="text" placeholder="What's your mind,  ">
             </div>
             <div class="create_post">
-                <input type="text" placeholder="What's your mind,  ">
+                <div class="profile_area">
+                    <a href="#"><img src="" alt=""></a>
+                    <div class="name_time">
+                    <a href="#"><h3>Md. Shohel Rana</h3></a>
+                    <span>2 min ago</span>
+                    </div>
+                </div>
             </div>
             </div>
         </div>
