@@ -181,16 +181,11 @@ body {
     margin-top: 10px;
     padding: 10px;
 }
-.create_post .post_reaction ul {
-    display: flex;
-    gap: 10px;
-}
-.create_post .post_reaction ul li {
+.create_post .post_reaction p {
     font-size: 16px;
-    cursor: pointer;
     color: #555;
 }
-.create_post .post_reaction ul li a {
+.create_post .post_reaction p a {
     color: #555;
-    transition: color 0.3s;
 }
+

@@ -95,13 +95,12 @@ session_start();
                     <p><i class="fa-solid fa-comment"></i> 50 Comments</p>
                     <p><i class="fa-solid fa-share"></i> 20 Shares</p>
                 </div>
+                <hr>
 
                 <div class="post_reaction">
-                    <ul>
-                        <li><a href="#"><i class="fa-solid fa-thumbs-up"></i> Like</a></li>
-                        <li><a href="#"><i class="fa-solid fa-comment"></i> Comment</a></li>
-                        <li><a href="#"><i class="fa-solid fa-share"></i> Share</a></li>
-                    </ul>
+                    <p><a href="#"><i class="fa-solid fa-thumbs-up"></i> Like</a></p>
+                    <p><a href="#"><i class="fa-solid fa-comment"></i> Comment</a></p>
+                    <p><a href="#"><i class="fa-solid fa-share"></i> Share</a></p>
                 </div> 
             </div>
             </div>
