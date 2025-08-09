@@ -23,7 +23,11 @@ if (!isset($_SESSION['username'])) {
     <div class="sub_dashboard">
         <div class="sidebar_area">
             <h2>NetWork</h2>
-            
+            <div class="menu_area">
+                <ul>
+                    <li><a href="dashboard.php"></a></li>
+                </ul>
+            </div>
         </div>
         <div class="mainbar_area"></div>
     </div>
