@@ -18,7 +18,12 @@ if (!isset($_SESSION['username'])) {
 </head>
 <body>
 
-
+<div class="Dashboard_area">
+    <div class="sub_dashboard">
+        <div class="sidebar_area"></div>
+        <div class="mainbar_area"></div>
+    </div>
+</div>
 
     
 <h2>Welcome to the Dashboard</h2>
