@@ -33,8 +33,13 @@ if (!isset($_SESSION['user_id'])) {
         </ul>
     </div>
     <div class="login_area">
+        <?php if (isset($_SESSION['username'])): ?>
+            <span class="user_name">Welcome,<b>(<?php echo htmlspecialchars($_SESSION['username']); ?>)</b></span>
+            <a class="btn btn-danger" href="logout.php">Logout</a>
+            <?php else: ?>
             <a class="login" href="login.php">Login</a>
             <a class="register" href="register.php">Register</a>
+        <?php endif; ?>
     </div>
     <!-- <div class="menu_bars">
         <i class="fa-solid fa-bars"></i>

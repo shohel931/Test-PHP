@@ -93,3 +93,16 @@ body {
     box-shadow: 1px 1px 5px #ccc;
     border-radius: 5px;
 }
+
+.contant_area .sub_contant .left_box h2, .right_box h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.contant_area .sub_contant .main_contant {
+    width: 40%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px #ccc;
+    border-radius: 5px;
+     overflow: auto;
+}
