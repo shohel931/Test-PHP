@@ -15,7 +15,7 @@
     </div>
     <div class="nav_area">
         <ul>
-            <li><a href="index.php">Home</a></li>
+            <li><a href="index.php"><i class="fa-solid fa-house"></i></a></li>
             <li><a href="about.php">About</a></li>
             <li><a href="contact.php">Contact</a></li>
         </ul>

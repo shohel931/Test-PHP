@@ -15,6 +15,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+    box-shadow: 1px 1px 5px #ccc;
 }
 .header_area .logo {
     font-size: 24px;
@@ -30,13 +31,13 @@
     gap: 20px;
 }
 .header_area .nav_area ul li {
-    color: #fff;
     font-size: 18px;
 }
 .header_area .nav_area ul li a {
-    color: #fff;
+    color: #0051ff;
     padding: 10px 15px;
     transition: color 0.3s;
+    font-weight: bold;
 }
 .header_area .nav_area ul li a:hover {
     color: #000;
