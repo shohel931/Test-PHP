@@ -50,13 +50,19 @@
 .mainbar_area {
     width: 85%;
     height: 100vh;
-    padding: 20px;
+    padding: 0;
     background-color: #fff;
     overflow-y: auto;
+    margin: 0;
 }
 .mainbar_area .Main_comtent_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin: 0;
+    background: #f0f0f0;
+    padding: 20px 10px;
+    box-shadow: 1px 1px 5px #ccc;
+    position: fixed;
+    width: 85%;
 }
