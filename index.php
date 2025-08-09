@@ -21,11 +21,12 @@
         </ul>
     </div>
     <div class="nav_area">
-        <ul>
-            <li><a href="login.php">Login</a></li>
-            <li><a href="register.php">Register</a></li>
-        </ul>
+            <a class="login" href="login.php">Login</a>
+            <a class="register" href="register.php">Register</a>
     </div>
+    <!-- <div class="menu_bars">
+        <i class="fa-solid fa-bars"></i>
+    </div> -->
 </header>
 
 
