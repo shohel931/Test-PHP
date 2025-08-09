@@ -1,7 +1,14 @@
 <?php 
 include 'confige.php';
 
-
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $fname = ($_POST['fname']);
+    $email = ($_POST['email']);
+    $username = ($_POST['username']);
+    $password = ($_POST['password']);
+    $confirm_password = ($_POST['confirm_password']);
+    
+}
 
 
 
