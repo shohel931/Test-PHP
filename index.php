@@ -82,6 +82,13 @@ session_start();
                 <div class="post_image">
                     <img src="./img/post.jpg" alt="Post Image">
                 </div>
+
+                <div class="post_video">
+                    <video controls>
+                        <source src="./img/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
             </div>
         </div>

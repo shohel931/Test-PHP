@@ -146,10 +146,19 @@ body {
 .create_post .post_image {
     width: 100%;
     height: auto;
-    margin-top: 10px;
     padding: 10px;
 }
 .create_post .post_image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.create_post .post_video {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+.create_post .post_video video {
     width: 100%;
     height: auto;
     border-radius: 5px;
