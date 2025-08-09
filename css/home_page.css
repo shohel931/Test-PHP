@@ -105,7 +105,11 @@ body {
     width: 100%;
     padding: 20px;
     height: auto;
-    background-color: #fff;
-    box-shadow: 1px 1px 5px #ccc;
     border-radius: 5px;
+}
+.contant_area .sub_contant .main_contant .create_post {
+    margin-bottom: 20px;
+    background-color: #fff;
+    height: auto;
+    padding: 10px;
 }

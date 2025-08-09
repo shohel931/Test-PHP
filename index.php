@@ -62,6 +62,12 @@ session_start();
             <div class="create_post">
                 <input type="text" placeholder="What's your mind,  ">
             </div>
+            <div class="create_post">
+                <input type="text" placeholder="What's your mind,  ">
+            </div>
+            <div class="create_post">
+                <input type="text" placeholder="What's your mind,  ">
+            </div>
             </div>
         </div>
         <div class="right_box">
