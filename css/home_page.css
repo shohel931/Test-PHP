@@ -34,6 +34,31 @@ body {
     height: 50px;
     border-radius: 50%;
 }
+.header_area .logo .search {
+    display: flex;
+    align-items: center;
+}
+.header_area .logo .search form {
+    display: flex;
+}
+.header_area .logo .search form input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+.header_area .logo .search form button {
+    background-color: #0051ff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.header_area .logo .search form button:hover {
+    background-color: #003bb5;
+}
+
 .header_area .nav_area ul {
     display: flex;
     gap: 30px;
