@@ -161,6 +161,19 @@ body {
     color: #555;
     margin: 0 10px;
 }
+.create_post .upload_area .forms .btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 15px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.create_post .upload_area .forms .btn:hover {
+    background-color: #003bb5;
+}
 
 
 .create_post .profile_area {

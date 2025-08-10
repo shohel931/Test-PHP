@@ -78,7 +78,7 @@ session_start();
                         <i class="fa-solid fa-video"></i><span> Video</span>
                         <input type="file" id="videoinput" name="video" accept="video/*" style="display: none;">
                     </label> <br><br>
-                    <button type="submit" class="btn btn-danger">Post</button>
+                    <button type="submit" class="btn">Post</button>
                 </form>
                 </div>
                 </div>
