@@ -40,13 +40,22 @@ body {
     font-size: 18px;
 }
 .header_area .nav_area ul li a {
-    color: #000;
     padding: 10px 15px;
-    transition: color 0.3s;
+   
     font-weight: bold;
 }
-.header_area .nav_area ul li a:hover {
-    color: #0051ff;
+.header_area .nav_area ul li a svg {
+    width: 30px;
+    height: 30px; 
+    transition: 0.5s;
+    vertical-align: middle;
+    fill: #000;
+}
+.header_area .nav_area ul li a svg:hover {
+    fill: #0051ff;
+}
+.header_area .nav_area ul li a svg.active {
+    fill: #0051ff;
 }
 
 .login_area a {
