@@ -106,7 +106,7 @@ if (!isset($_SESSION['user_id'])) {
         <div class="right_box">
             <h2>Sponsered</h2>
             <div class="sp_box">
-                <a href="#"><img src="" alt=""></a>
+                <a href="#"><img src="./img/post.jpg" alt=""></a>
             </div>
         </div>
     </div>
