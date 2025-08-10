@@ -98,7 +98,7 @@ body {
 .contant_area .sub_contant .left_box, .right_box{
     width: 20%;
     height: 100vh;
-    background-color: #fff;
+    background-color: #f4f4f4;
     padding: 20px;
     box-shadow: 1px 1px 5px #ccc;
     border-radius: 5px;
