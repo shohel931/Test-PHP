@@ -40,28 +40,34 @@ body {
 }
 .header_area .logo .search form {
     display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.header_area .logo .search form input:focus {
+    width: 300px;
 }
 .header_area .logo .search form input {
-    padding: 5px;
+    padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 20px;
     outline: none;
+    width: 200px;
+    transition: width 0.3s ease;
 }
 .header_area .logo .search form button {
-    background-color: #0051ff;
-    color: #fff;
+    color: #000;
     border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
+    font-size: 18px;
+    padding: 0;
+    border-radius: 50%;
     cursor: pointer;
-}
-.header_area .logo .search form button:hover {
-    background-color: #003bb5;
+    background-color: #fff;
 }
 
 .header_area .nav_area ul {
     display: flex;
     gap: 30px;
+    margin-left: -140px;
 }
 .header_area .nav_area ul li {
     font-size: 18px;
