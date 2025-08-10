@@ -24,10 +24,10 @@ body {
     position: fixed;
 }
 .header_area .logo {
-    font-size: 24px;
     font-weight: bold;
     display: flex;
     align-items: center;
+    gap: 20px;
 }
 .header_area .logo a img{
     width: 50px;
@@ -37,7 +37,6 @@ body {
 .header_area .nav_area ul {
     display: flex;
     gap: 30px;
-    margin-left: 150px;
 }
 .header_area .nav_area ul li {
     font-size: 18px;
