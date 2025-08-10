@@ -95,6 +95,8 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
+
 .contant_area .sub_contant .left_box, .right_box{
     width: 20%;
     height: 100vh;
@@ -107,6 +109,33 @@ body {
     position: fixed;
     left: 0;
 }
+.contant_area .sub_contant .left_box ul {
+    padding: 0;
+}
+.contant_area .sub_contant .left_box ul li {
+    margin-bottom: 15px;
+}
+.contant_area .sub_contant .left_box ul li a {
+    display: flex;
+    align-items: center;
+    color: #333;
+    font-size: 18px;
+}
+.contant_area .sub_contant .left_box ul li a:hover {
+    color: #0051ff;
+}
+.contant_area .sub_contant .left_box ul li a svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    fill: #333;
+}
+.contant_area .sub_contant .left_box ul li a svg:hover {
+    fill: #0051ff;
+}
+
+
+
 .contant_area .sub_contant .right_box {
     position: fixed;
     right: 0;
