@@ -26,6 +26,8 @@ body {
 .header_area .logo {
     font-size: 24px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
 }
 .header_area .logo a img{
     width: 50px;
@@ -111,6 +113,7 @@ body {
 }
 .contant_area .sub_contant .left_box ul {
     padding: 0;
+    width: 150px;
 }
 .contant_area .sub_contant .left_box ul li {
     margin-bottom: 15px;
