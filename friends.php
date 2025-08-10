@@ -19,7 +19,7 @@ if (!isset($_SESSION['user_id'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/home_page.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-    <link rel="shortcut icon" href="./img/log.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/logos.png" type="image/x-icon">
     <title>Friends</title>
 </head>
 <body>
