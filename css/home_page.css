@@ -156,6 +156,11 @@ body {
 .video_inp i{
     color: red;
 }
+.create_post .upload_area .forms b {
+    font-size: 16px;
+    color: #555;
+    margin: 0 10px;
+}
 
 
 .create_post .profile_area {
