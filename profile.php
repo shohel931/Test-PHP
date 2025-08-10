@@ -28,6 +28,12 @@ if (!isset($_SESSION['user_id'])) {
 <header class="header_area">
     <div class="logo">
         <a href="index.php"><img src="./img/log.png" alt=""></a>
+        <div class="search">
+            <form action="search.php" method="POST">
+                <input type="text" name="query" placeholder="Search..." required>
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
     </div>
     <div class="nav_area">
        <ul>
