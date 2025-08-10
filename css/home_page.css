@@ -34,7 +34,7 @@ body {
 }
 .header_area .nav_area ul {
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 .header_area .nav_area ul li {
     font-size: 18px;
