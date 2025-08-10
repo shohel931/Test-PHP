@@ -122,6 +122,7 @@ body {
 
 .create_post .upload_area {
     display: flex;
+    padding: 10px 0;
 }
 .create_post .upload_area .up_logo img {
     width: 50px;
