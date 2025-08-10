@@ -1,10 +1,10 @@
 <?php 
 session_start();
 
-// if (!isset($_SESSION['user_id'])) {
-//     header('Location: login.php');
-//     exit();
-// }
+if (!isset($_SESSION['user_id'])) {
+    header('Location: login.php');
+    exit();
+}
 
 
 
@@ -17,7 +17,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/home_page.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-    <title>Home</title>
+    <title>Videos</title>
 </head>
 <body>
 
@@ -63,30 +63,7 @@ session_start();
             <div class="sub_contain_area">
 
             <div class="create_post">
-                <div class="upload_area">
-                <div class="up_logo">
-                    <a href="#"><img src="./img/log.png" alt=""></a>
-                </div>
-                <div class="forms">
-                    <form action="">
-                    <textarea name="text" id="" placeholder="What's your mind, Sohel" required></textarea> <br><br>
-                    <label class="image_inp" for="imageinput">
-                       <i class="fa-solid fa-image"></i><span> Image</span>
-                        <input type="file" id="imageinput" name="image" accept="image/*" style="display: none;">    
-                    </label> <b>|</b>
-                    <label class="video_inp" for="videoinput">
-                        <i class="fa-solid fa-video"></i><span> Video</span>
-                        <input type="file" id="videoinput" name="video" accept="video/*" style="display: none;">
-                    </label> <br><br>
-                    <button type="submit" class="btn">Post</button>
-                </form>
-                </div>
-                </div>
-            </div>
-
-
-            <div class="create_post">
-
+                
                 <div class="profile_area">
                     <a href="#"><img src="./img/log.png" alt=""></a>
                     <div class="name_time">
