@@ -1,13 +1,14 @@
 <?php 
+include 'confige.php';
 session_start();
 
 // active navigation
 $current_page = basename($_SERVER['PHP_SELF']);
 
-// if (!isset($_SESSION['user_id'])) {
-//     header('Location: login.php');
-//     exit();
-// }
+if (!isset($_SESSION['user_id'])) {
+    header('Location: login.php');
+    exit();
+}
 
 
 ?>
@@ -19,7 +20,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/home_page.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-    <title>Home</title>
+    <title>Sttings</title>
 </head>
 <body>
 
