@@ -18,6 +18,30 @@ if (mysqli_query($conn, $sql)) {
 }
 
 
+// $fullname = "Abul Khan";
+// $email = "abul@gmail.com";
+// $username = "Abul123";
+// $password = "Password123@#";
+
+// Insert data into users table
+$sql = "INSERT INTO users (fullname, email, username, password) VALUES ($fullname, $email, $username, $password)";
+
+
+$sql = "INSERT INTO users (fullname, email, username, password) VALUES ($fullname, $email, $username, $password)";
+
+
+$sql = "INSERT INTO users (fullname, email, username, password) VALUES ($fullname, $email, $username, $password)";
+
+
+$sql = "INSERT INTO users (fullname, email, username, password) VALUES ($fullname, $email, $username, $password)";
+
+
+$sql = "INSERT INTO users (fullname, email, username, password) VALUES ($fullname, $email, $username, $password)";
+
+
+$sql = "INSERT INTO users (fullname, email, username, password) VALUES ($fullname, $email, $username, $password)";
+
+
 
 mysqli_close($conn);
 ?>
