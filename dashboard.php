@@ -27,6 +27,7 @@ if (!isset($_SESSION['username'])) {
             <div class="menu_area">
                 <ul>
                     <li><a href="dashboard.php"><i class="fa-solid fa-gauge-high"></i> Dashboard</a></li>
+                    <li><a href="index.php"><i class="fa-solid fa-home"></i> Home</a></li>
                     <li><a href="profile.php"><i class="fa-solid fa-user"></i> Profile</a></li>
                     <li><a href="settings.php"><i class="fa-solid fa-gear"></i> Settings</a></li>
                     <li><a href="logout.php"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
