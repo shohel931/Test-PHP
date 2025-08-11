@@ -272,7 +272,9 @@ body {
 .create_post .profile_area .name_time h3 {
     font-size: 18px;
     margin-bottom: 5px;
+    color: #333;
 }
+
 .create_post .profile_area .name_time p {
     font-size: 14px;
     color: #888;
