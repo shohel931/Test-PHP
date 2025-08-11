@@ -81,7 +81,7 @@ if (!isset($_SESSION['user_id'])) {
                 <div class="profile_area">
                     <a href="#"><img src="./img/log.png" alt=""></a>
                     <div class="name_time">
-                    <a href="#"><h3>Md. Shohel Rana</h3></a>
+                    <a href="profile.php"><h3><?php echo htmlspecialchars($_SESSION['fulname']); ?></h3></a>
                     <p>2 min ago</p>
                     </div>
                 </div>

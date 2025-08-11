@@ -2,9 +2,9 @@
 include 'confige.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $fullname = ($_POST['fullname']);
-    $email = ($_POST['email']);
-    $username = ($_POST['username']);
+    $fullname = htmlspecialchars($_POST['fullname']);
+    $email = htmlspecialchars($_POST['email']);
+    $username = htmlspecialchars($_POST['username']);
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT); 
 
 }
