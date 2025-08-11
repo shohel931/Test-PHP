@@ -18,29 +18,20 @@ if (mysqli_query($conn, $sql)) {
 }
 
 
-// $fullname = "Abul Khan";
-// $email = "abul@gmail.com";
-// $username = "Abul123";
-// $password = "Password123@#";
+// Create table for videos
+$sql = "CREATE TABLE IF NOT EXISTS videos (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(100) NOT NULL,
+    description TEXT,
+    video_url VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    )";
 
-// Insert data into users table
-$sql = "INSERT INTO users (fullname, email, username, password) VALUES ($fullname, $email, $username, $password)";
-
-
-$sql = "INSERT INTO users (fullname, email, username, password) VALUES ($fullname, $email, $username, $password)";
-
-
-$sql = "INSERT INTO users (fullname, email, username, password) VALUES ($fullname, $email, $username, $password)";
-
-
-$sql = "INSERT INTO users (fullname, email, username, password) VALUES ($fullname, $email, $username, $password)";
-
-
-$sql = "INSERT INTO users (fullname, email, username, password) VALUES ($fullname, $email, $username, $password)";
-
-
-$sql = "INSERT INTO users (fullname, email, username, password) VALUES ($fullname, $email, $username, $password)";
-
+if (mysqli_query($conn, $sql)) {
+    echo "Table videos created successfully";   
+} else {
+    echo "Error creating table: " . mysqli_error($conn);
+}
 
 
 mysqli_close($conn);

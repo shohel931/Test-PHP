@@ -17,15 +17,5 @@ $sql = "CREATE DATABASE IF NOT EXISTS $dbname";
 mysqli_select_db($conn, $dbname);
 
 
-if (mysqli_query($conn, $sql)) {
-    $last_id = mysqli_insert_id($conn);
-    echo "Last inserted ID is: " . $last_id . "<br>";
-}
-
-if (mysqli_multi_query($conn, $sql)) {
-    echo "Created";
-} else {
-    echo "Error";
-}
 
 ?>
