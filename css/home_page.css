@@ -47,11 +47,6 @@ body {
     font-weight: bold;
     font-size: 20px;
 }
-.logo_text img {
-    width: 15px;
-    height: 15px;
-}
-
 /* Header Area */
 .header_area {
     width: 100%;
