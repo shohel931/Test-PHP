@@ -28,6 +28,9 @@ $current_page = basename($_SERVER['PHP_SELF']);
     <div class="loder">
         <img src="./img/logos.png" alt="">
     </div>
+    <div class="logo_text">
+        <p>Powered by <span>Network</span></p>
+    </div>
 </div>
 
 <header class="header_area">

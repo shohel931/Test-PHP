@@ -18,7 +18,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #000;
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,11 +30,18 @@ body {
 #preloder .loder img {
     width: 100px;
     height: 100px;
-    animation: fade 1s infinite alternate;
 }
-@keyframes fade {
-    from { opacity: 0.3; }
-    to { opacity: 1; }
+.logo_text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #555;
+    font-size: 15px;
+}
+.logo_text span {
+    color: #0051ff;
+    font-weight: bold;
 }
 
 /* Header Area */
@@ -209,7 +216,7 @@ body {
 .contant_area .sub_contant .main_contant {
     width: 40%;
     margin-left: 30%;
-    overflow: scroll;
+    overflow: none;
 }
 .contant_area .sub_contant .main_contant .sub_contain_area {
     width: 100%;
