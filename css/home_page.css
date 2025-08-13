@@ -12,7 +12,7 @@ body {
 }
 
 /* Preloder Area*/
-#preloder {
+#preloder, .preloder {
     position: fixed;
     top: 0;
     left: 0;
@@ -24,10 +24,10 @@ body {
     justify-content: center;
     z-index: 9999;
 }
-#preloder .loder {
+#preloder, .preloder .loder {
     text-align: center;
 }
-#preloder .loder img {
+#preloder, .preloder .loder img {
     width: 100px;
     height: 100px;
 }
