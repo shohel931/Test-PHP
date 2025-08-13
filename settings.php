@@ -75,6 +75,6 @@ if (!isset($_SESSION['user_id'])) {
     </div>
 </div>
 
-
+<script src="./js/all_pages.js"></script>
 </body>
 </html>

@@ -25,6 +25,15 @@ if (!isset($_SESSION['user_id'])) {
 </head>
 <body>
 
+<div id="preloded">
+    <div class="loder">
+        <img src="./img/logos.png" alt="">
+    </div>
+    <div class="logo_text">
+        <p>Powered by <span>Network</span></p>
+    </div>
+</div>
+
 <header class="header_area">
     <div class="logo">
         <a href="index.php"><img src="./img/log.png" alt=""></a>
@@ -261,6 +270,6 @@ if (!isset($_SESSION['user_id'])) {
     </div>
 </div>
 
-
+<script src="./js/all_pages.js"></script>
 </body>
 </html>
