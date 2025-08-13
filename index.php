@@ -24,6 +24,13 @@ $current_page = basename($_SERVER['PHP_SELF']);
 </head>
 <body>
 
+<div class="preloder">
+    <div class="loder">
+        <img src="./img/logos.png" alt="">
+        
+    </div>
+</div>
+
 <header class="header_area">
     <div class="logo">
         <a href="index.php"><img src="./img/log.png" alt=""></a>
