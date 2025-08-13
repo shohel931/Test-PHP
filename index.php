@@ -27,7 +27,6 @@ $current_page = basename($_SERVER['PHP_SELF']);
 <div class="preloder">
     <div class="loder">
         <img src="./img/logos.png" alt="">
-        
     </div>
 </div>
 
