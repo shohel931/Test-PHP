@@ -158,6 +158,6 @@ $current_page = basename($_SERVER['PHP_SELF']);
     </div>
 </div>
 
-
+<script src="./js/home_page.js"></script>
 </body>
 </html>
