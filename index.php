@@ -63,7 +63,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
     </div> -->
 </header>
 
-<div class="contant_area">
+<div id="content" class="contant_area">
     <div class="sub_contant">
         <div class="left_box">
             <h2>Shortcute</h2>

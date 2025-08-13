@@ -1,5 +1,7 @@
 // Preloder Script
-window.addEventListener('load', function()) {
-    document.getElementById('preloder').style.display = 'none';
-    document.getElementById('main-content').style.display = 'block';
-}
+   document.addEventListener("DOMContentLoaded", function(){
+        setTimeout(function(){
+            document.getElementById("preloader").style.display = "none";
+            document.getElementById("main-content").style.display = "block";
+        }, 5000);
+    });
