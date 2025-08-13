@@ -25,7 +25,7 @@ if (!isset($_SESSION['user_id'])) {
 </head>
 <body>
 
-<div id="preloder preloded">
+<div id="preloded" class="preloder">
     <div class="loder">
         <img src="./img/logos.png" alt="">
     </div>
