@@ -20,6 +20,15 @@ if (!isset($_SESSION['username'])) {
 </head>
 <body>
 
+<div id="preloded" class="preloder">
+    <div class="loder">
+        <img src="./img/logos.png" alt="">
+    </div>
+    <div class="logo_text">
+        <p>Powered by <span>Network</span></p>
+    </div>
+</div>
+
 <div class="Dashboard_area">
     <div class="sub_dashboard">
         <div class="sidebar_area">
