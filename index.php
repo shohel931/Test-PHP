@@ -114,19 +114,19 @@ $result = mysqli_query($conn, $sql);
                 </div>
             </div>
 
-
+            <?php while($row = $result->fetch_assoc()): ?>
             <div class="create_post">
 
                 <div class="profile_area">
                     <a href="#"><img src="./img/log.png" alt=""></a>
                     <div class="name_time">
-                    <a href="#"><h3>Md. Shohel Rana</h3></a>
-                    <p>2 min ago</p>
+                    <a href="#"><h3><?php echo htmlspecialchars($row['fullname']); ?></h3></a>
+                    <p><?php echo date("M d, Y H:i", strtotime($row['created_at'])); ?></p>
                     </div>
                 </div>
 
                 <div class="post_text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet non vero sapiente illum iure repellat praesentium ea reiciendis, libero dignissimos.</p>
+                    <p><?php echo htmlspecialchars($row['text']); ?></p>
                 </div>
 
                 <div class="post_image">
