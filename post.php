@@ -8,6 +8,13 @@ if (!isset($_SESSION['user'])) {
 }
 
 
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $text = trim($_POST['text']);
+    $image = "";
+    $video = "";
+
+    
+}
 
 
 
