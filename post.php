@@ -13,7 +13,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $image = "";
     $video = "";
 
-    
+
+    // Image Upload
+    if (isset($_FILES['imageinput']) && $_FILES['imageinput']['error'] == 0) {
+        $image_name = time() . '_' . $_FILES['imageinput']['name'];
+        $target_dir = "uploads/image/";
+        $target_file = $target_dir . basename($image_name);
+    }
 }
 
 
