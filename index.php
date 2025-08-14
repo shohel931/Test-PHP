@@ -1,4 +1,5 @@
 <?php 
+include 'confige.php';
 session_start();
 
 // active navigation
@@ -8,6 +9,13 @@ $current_page = basename($_SERVER['PHP_SELF']);
 //     header('Location: login.php');
 //     exit();
 // }
+
+
+$sql = "SELECT posts. *,  users.fullname, FROM posts 
+        JOIN users ON posts.user_id = users.id 
+        ORDER BY posts.created_at DESC";
+
+$result = mysqli_query($conn, $sql);
 
 
 ?>
