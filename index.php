@@ -90,7 +90,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
                     <a href="#"><img src="./img/log.png" alt=""></a>
                 </div>
                 <div class="forms">
-                    <form action="">
+                    <form action="post.php" method="POST" enctype="multipart/form-data">
                     <textarea name="text" id="" placeholder="What's your mind, Sohel" required></textarea> <br><br>
                     <label class="image_inp" for="imageinput">
                        <i class="fa-solid fa-image"></i><span> Image</span>
