@@ -129,9 +129,11 @@ $result = mysqli_query($conn, $sql);
                     <p><?php echo htmlspecialchars($row['text']); ?></p>
                 </div>
 
+                <?php if (!empty($row['image'])): ?>
                 <div class="post_image">
-                    <img src="./img/post.jpg" alt="Post Image">
+                    <img src="uploads/image/<?php echo $row['image']; ?>" alt="Post Image">
                 </div>
+                <?php endif; ?>
 
                 <div class="post_video">
                     <video controls>
