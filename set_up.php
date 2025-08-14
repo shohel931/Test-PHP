@@ -18,20 +18,22 @@ if (mysqli_query($conn, $sql)) {
 }
 
 
-// Create table for videos
-$sql = "CREATE TABLE IF NOT EXISTS videos (
-    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    title VARCHAR(100) NOT NULL,
-    description TEXT,
-    video_url VARCHAR(255) NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-    )";
-
+// Create table for Post
+$sql = "CREATE TABLE IF NOT EXISTS posts (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  user_id INT UNSIGNED NULL,              
+  content TEXT NOT NULL,
+  image_path VARCHAR(255) DEFAULT NULL,
+  video_path VARCHAR(255) DEFAULT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)";
 if (mysqli_query($conn, $sql)) {
-    echo "Table videos created successfully";   
+    echo "Table posts created successfully";
 } else {
     echo "Error creating table: " . mysqli_error($conn);
 }
+
+
 
 
 mysqli_close($conn);
