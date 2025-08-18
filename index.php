@@ -10,12 +10,8 @@ $current_page = basename($_SERVER['PHP_SELF']);
 //     exit();
 // }
 
+$result = $conn->query("SELECT * FROM posts ORDER BY id DESC");
 
-$sql = "SELECT posts. *,  users.fullname, FROM posts 
-        JOIN users ON posts.user_id = users.id 
-        ORDER BY posts.created_at DESC";
-
-$result = mysqli_query($conn, $sql);
 
 
 ?>
@@ -99,7 +95,7 @@ $result = mysqli_query($conn, $sql);
                 </div>
                 <div class="forms">
                     <form action="post.php" method="POST" enctype="multipart/form-data">
-                    <textarea name="text" id="" placeholder="What's your mind, Sohel" required></textarea> <br><br>
+                    <textarea name="description" id="" placeholder="What's your mind, Sohel" required></textarea> <br><br>
                     <label class="image_inp" for="imageinput">
                        <i class="fa-solid fa-image"></i><span> Image</span>
                         <input type="file" id="imageinput" name="image" accept="image/*" style="display: none;">    
@@ -114,49 +110,48 @@ $result = mysqli_query($conn, $sql);
                 </div>
             </div>
 
-            <?php while($row = $result->fetch_assoc()): ?>
-            <div class="create_post">
+           <?php while ($row = $result->fetch_assoc()) {
+?>
+<div class="create_post">
+    <div class="profile_area">
+        <a href="#"><img src="uploads/<?php echo $row['profile_img']; ?>" alt=""></a>
+        <div class="name_time">
+            <a href="#"><h3><?php echo $row['username']; ?></h3></a>
+            <p><?php echo date("d M Y h:i A", strtotime($row['created_at'])); ?></p>
+        </div>
+    </div>
 
-                <div class="profile_area">
-                    <a href="#"><img src="./img/log.png" alt=""></a>
-                    <div class="name_time">
-                    <a href="#"><h3><?php echo htmlspecialchars($row['fullname']); ?></h3></a>
-                    <p><?php echo date("M d, Y H:i", strtotime($row['created_at'])); ?></p>
-                    </div>
-                </div>
+    <div class="post_text">
+        <p><?php echo htmlspecialchars($row['post_text']); ?></p>
+    </div>
 
-                <div class="post_text">
-                    <p><?php echo htmlspecialchars($row['text']); ?></p>
-                </div>
+    <?php if ($row['post_image']) { ?>
+        <div class="post_image">
+            <img src="uploads/<?php echo $row['post_image']; ?>" alt="Post Image">
+        </div>
+    <?php } ?>
 
-                <?php if (!empty($row['image'])): ?>
-                <div class="post_image">
-                    <img src="uploads/image/<?php echo $row['image']; ?>" alt="Post Image">
-                </div>
-                <?php endif; ?>
+    <?php if ($row['post_video']) { ?>
+        <div class="post_video">
+            <video controls>
+                <source src="uploads/<?php echo $row['post_video']; ?>" type="video/mp4">
+            </video>
+        </div>
+    <?php } ?>
 
-                <div class="post_video">
-                    <video controls>
-                        <source src="./img/video.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-
-                <div class="count_like">
-                    <p><i class="fa-solid fa-thumbs-up"></i> 100 Likes</p>
-                    <p><i class="fa-solid fa-comment"></i> 50 Comments</p>
-                    <p><i class="fa-solid fa-share"></i> 20 Shares</p>
-                </div>
-                <hr>
-
-                <div class="post_reaction">
-                    <p><a href="#"><i class="fa-solid fa-thumbs-up"></i> Like</a></p>
-                    <p><a href="#"><i class="fa-solid fa-comment"></i> Comment</a></p>
-                    <p><a href="#"><i class="fa-solid fa-share"></i> Share</a></p>
-                </div> 
-            </div>
-            
-
+    <div class="count_like">
+        <p><i class="fa-solid fa-thumbs-up"></i> 0 Likes</p>
+        <p><i class="fa-solid fa-comment"></i> 0 Comments</p>
+        <p><i class="fa-solid fa-share"></i> 0 Shares</p>
+    </div>
+    <hr>
+    <div class="post_reaction">
+        <p><a href="#"><i class="fa-solid fa-thumbs-up"></i> Like</a></p>
+        <p><a href="#"><i class="fa-solid fa-comment"></i> Comment</a></p>
+        <p><a href="#"><i class="fa-solid fa-share"></i> Share</a></p>
+    </div> 
+</div>
+<?php } ?>
 
             </div>
         </div>
