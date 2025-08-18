@@ -60,7 +60,9 @@ if (!isset($_SESSION['user_id'])) {
 
 <div class="contant_area">
     <div class="sub_contant">
-        
+        <div class="cover_image">
+            <img src="./img/cover.jpg" alt="Cover Image">
+        </div>
     </div>
 </div>
 
