@@ -113,11 +113,29 @@ if (!isset($_SESSION['user_id'])) {
                 <li><a href="#">Photos</a></li>
                 <li><a href="#">Videos</a></li>
                 <li><a href="#">Friends</a></li>
-                <li><a href="#">More</a></li>
+                <li><a href="#">More <i class="fa-solid fa-angle-down"></i></a></li>
             </ul>
         </div>
     </div>
 </div>
+
+
+
+
+<div class="profile_contants">
+    <div class="sub_profile_contans">
+        <div class="contant_box1">
+            <div class="bio_area">
+                <h3>Bio</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+        <div class="contant_box2"></div>
+    </div>
+</div>
+
+
+
 
 
 
