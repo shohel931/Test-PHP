@@ -380,7 +380,7 @@ body {
 
 /* Profile Area */
 .main_profile_area {
-    margin-top: 60px;
+    padding-top: 60px;
 }
 .cover_area {
     position: relative;
@@ -432,6 +432,11 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+}
+.cover_area .profile_image .profile_upload {
+	position: absolute;
+	top: 72%;
+	left: 53%;
 }
 .cover_area .profile_image .edit_profile_photo {
     margin-left: 9%;

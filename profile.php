@@ -88,7 +88,7 @@ if (!isset($_SESSION['user_id'])) {
         </div>
         <div class="profile_image">
             <img src="./img/logos.png" alt="Profile Picture">
-            <form action="update_photos.php" method="POST" enctype="multipart/form-data">
+            <form class="profile_upload" action="update_photos.php" method="POST" enctype="multipart/form-data">
                 <label class="edit_profile_photo">
                     <a ><i class="fa-solid fa-camera"></i></a>
                     <input type="file" name="profile_pic" onchange="this.form.submit()" hidden>
