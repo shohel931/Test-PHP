@@ -60,7 +60,7 @@ if (!isset($_SESSION['user_id'])) {
 
 
 
-<div class="Profile_areas">
+<!-- <div class="Profile_areas">
     <div class="sub_profiles_area">
         <div class="covar_image">
             <img src="./img/cover.jpg" alt="Cover Image">
@@ -72,10 +72,52 @@ if (!isset($_SESSION['user_id'])) {
             </form>
         </div>
     </div>
+</div> -->
+
+
+<div class="main_profile_area">
+    <div class="cover_area">
+        <div class="cover_image">
+            <img src="./img/cover.jpg" alt="Cover Image">
+            <form action="update_photos.php" method="POST" enctype="multipart/form-data">
+                <label class="edit_cover_photo">
+                  <i class="fa-solid fa-camera"></i> Edit Cover Photo
+                    <input type="file" name="cover_photo" onchange="this.form.submit()" hidden>
+                </label>
+            </form>
+        </div>
+        <div class="profile_image">
+            <img src="./img/logos.png" alt="Profile Picture">
+            <form action="update_photos.php" method="POST" enctype="multipart/form-data">
+                <label class="edit_profile_photo">
+                    <a ><i class="fa-solid fa-camera"></i></a>
+                    <input type="file" name="profile_pic" onchange="this.form.submit()" hidden>
+                </label>
+            </form>
+        </div>
+        <div class="profile_name">
+            <h2>MD. Shohel Rana</h2>
+            <a href="friends.php"><p><span>100</span> friends</p></a>
+        </div>
+
+        <div class="profile_status">
+            <a href="#" class="status_button"><i class="fa-solid fa-pen-to-square"></i> Edit Profile</a>
+            <a href="" class="status_button"><i class="fa-solid fa-plus"></i> Add Friend</a>
+            <a href="" class="status_button"><i class="fa-solid fa-message"></i> Message</a>
+        </div>
+
+        <div class="profile_nav">
+            <ul>
+                <li><a href="#">Post</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Photos</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Friends</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+        </div>
+    </div>
 </div>
-
-
-
 
 
 
