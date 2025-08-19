@@ -130,7 +130,42 @@ if (!isset($_SESSION['user_id'])) {
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
         </div>
-        <div class="contant_box2"></div>
+        <div class="contant_box2">
+            <div class="create_post">
+
+                <div class="profile_area">
+                    <a href="#"><img src="./img/log.png" alt=""></a>
+                    <div class="name_time">
+                    <a href="profile.php"><h3><?php echo htmlspecialchars($_SESSION['username']); ?></h3></a>
+                    <p>2 min ago</p>
+                    </div>
+                </div>
+
+                <div class="post_text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet non vero sapiente illum iure repellat praesentium ea reiciendis, libero dignissimos.</p>
+                </div>
+
+                <div class="post_video">
+                    <video controls>
+                        <source src="./img/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <div class="count_like">
+                    <p><i class="fa-solid fa-thumbs-up"></i> 100 Likes</p>
+                    <p><i class="fa-solid fa-comment"></i> 50 Comments</p>
+                    <p><i class="fa-solid fa-share"></i> 20 Shares</p>
+                </div>
+                <hr>
+
+                <div class="post_reaction">
+                    <p><a href="#"><i class="fa-solid fa-thumbs-up"></i> Like</a></p>
+                    <p><a href="#"><i class="fa-solid fa-comment"></i> Comment</a></p>
+                    <p><a href="#"><i class="fa-solid fa-share"></i> Share</a></p>
+                </div> 
+            </div>
+        </div>
     </div>
 </div>
 
