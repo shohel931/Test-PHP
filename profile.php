@@ -58,10 +58,18 @@ if (!isset($_SESSION['user_id'])) {
     </div> -->
 </header>
 
-<div class="contant_area">
-    <div class="sub_contant">
-        <div class="cover_image">
+
+
+<div class="Profile_areas">
+    <div class="sub_profiles_area">
+        <div class="covar_image">
             <img src="./img/cover.jpg" alt="Cover Image">
+            <form action="update_photos.php" method="POST" enctype="multipart/form-data">
+                <label class="edit_cover_photo">
+                    <i class="fa-solid fa-camera"></i> Edit Cover Photo
+                    <input type="file" name="cover_photo" accept="image/*" onchange="this.form.submit()" hidden>
+                </label>
+            </form>
         </div>
     </div>
 </div>

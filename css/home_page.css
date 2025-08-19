@@ -373,13 +373,29 @@ body {
 }
 
 
-
-/* Profile Page */
-
-.cover_image {
-   align-items: center;
-    justify-content: center;
+/* Profile Area */
+.Profile_areas {
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px #ccc;
+    border-radius: 10px;
+}
+/* .Profile_areas .sub_profiles_area {
+    display: flex;
+    justify-content: space-between;
+} */
+.Profile_areas .sub_profiles_area .covar_image {
     width: 100%;
     height: 200px;
-    overflow: hidden;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.Profile_areas .sub_profiles_area .covar_image img {
+    width: 80%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
 }
