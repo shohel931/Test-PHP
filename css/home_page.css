@@ -405,7 +405,7 @@ body {
 }
 .cover_area .cover_image .edit_cover_photo {
     position: absolute;
-    top: 58%;
+    top: 61%;
     right: 16%;
     background: #fff;
     color: #333;
@@ -425,7 +425,7 @@ body {
 }
 
 .cover_area .profile_image {
-    margin-top: -80px;
+    margin-top: -125px;
 }
 
 .cover_area .profile_image img{
