@@ -435,7 +435,7 @@ body {
 }
 .cover_area .profile_image .profile_upload {
 	position: absolute;
-	top: 72%;
+	top: 71%;
 	left: 53%;
 }
 .cover_area .profile_image .edit_profile_photo {
@@ -516,3 +516,6 @@ body {
     color: #5f27cd;
 }
 
+.profile_contants {
+    
+}
